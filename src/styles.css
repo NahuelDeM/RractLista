@@ -1,0 +1,68 @@
+html {
+  background: #ddd;
+  height: 100%;
+  display: flex;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.todo-list {
+  background: pink;
+  font-size: 15px;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  outline: none;
+  padding: 8px;
+  font-size: 15px;
+  border: 0px solid;
+  color: black;
+}
+
+.file-input {
+  padding: 2px;
+  background: pink;
+}
+
+.file-input > .text {
+  outline: none;
+  padding: 0px 10px;
+  font-size: 15px;
+  width: 230px;
+  height: 46px;
+  background: transparent;
+  border: 2px solid;
+}
+
+.todo.new-item {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeIn 0.3s linear forwards;
+}
+
+.todo__state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
